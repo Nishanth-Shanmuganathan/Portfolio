@@ -1,13 +1,43 @@
 <mat-toolbar [ngClass]="{ shadow: !isMobile }" *ngIf="!isMobile">
   <mat-toolbar-row class="justify-content-end">
-    <button mat-button>About</button>
-    <button mat-button>Academics</button>
-    <button mat-button>Skills</button>
-    <button mat-button>Achievements</button>
-    <button mat-button>Projects</button>
+    <a
+      [routerLink]="['/']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      mat-button
+      >About</a
+    >
+    <a
+      [routerLink]="['academics']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      mat-button
+      >Academics</a
+    >
+    <a
+      [routerLink]="['skills']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      mat-button
+      >Skills</a
+    >
+    <a
+      [routerLink]="['achievements']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      mat-button
+      >Achievements</a
+    >
+    <a
+      [routerLink]="['projects']"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      mat-button
+      >Projects</a
+    >
   </mat-toolbar-row>
 </mat-toolbar>
-<button
+<a
   *ngIf="isMobile"
   mat-fab
   class="bg-dark text-light"
@@ -15,17 +45,31 @@
   (click)="toggleNav()"
 >
   <mat-icon>menu</mat-icon>
-</button>
+</a>
 
 <ng-container #nav *ngIf="showNavDialog">
   <div class="dialog_wrapper" (click)="toggleNav()">
     <mat-card>
       <mat-card-content class="d-flex flex-column">
-        <button mat-raised-button (click)="toggleNav()">About</button>
-        <button mat-raised-button (click)="toggleNav()">Academics</button>
-        <button mat-raised-button (click)="toggleNav()">Skills</button>
-        <button mat-raised-button (click)="toggleNav()">Achievements</button>
-        <button mat-raised-button (click)="toggleNav()">Projects</button>
+        <a [routerLink]="['/']" mat-raised-button (click)="toggleNav()">
+          About
+        </a>
+        <a [routerLink]="['academics']" mat-raised-button (click)="toggleNav()">
+          Academics
+        </a>
+        <a [routerLink]="['skills']" mat-raised-button (click)="toggleNav()">
+          Skills
+        </a>
+        <a
+          [routerLink]="['achievements']"
+          mat-raised-button
+          (click)="toggleNav()"
+        >
+          Achievements
+        </a>
+        <a [routerLink]="['projects']" mat-raised-button (click)="toggleNav()">
+          Projects
+        </a>
       </mat-card-content>
     </mat-card>
   </div>

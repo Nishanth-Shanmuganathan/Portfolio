@@ -17,14 +17,16 @@ mat-toolbar-row {
   font-size: 18px;
 }
 
-mat-toolbar-row button[mat-button] {
+mat-toolbar-row a[mat-button] {
   margin: 5px;
   font-weight: 600;
   width: 150px;
+  text-decoration: none;
   transition: all 500ms ease;
 }
 
-mat-toolbar-row button[mat-button]:hover {
+mat-toolbar-row a[mat-button]:hover,
+.active {
   background-color: rgb(45, 45, 45);
   color: white;
 }
@@ -39,7 +41,7 @@ mat-card {
   transform: translate(-50%, -50%);
 }
 
-mat-card-content button[mat-raised-button] {
+mat-card-content a[mat-raised-button] {
   margin: 10px;
 }
 
