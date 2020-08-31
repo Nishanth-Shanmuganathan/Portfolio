@@ -1,0 +1,19 @@
+.card {
+  max-width: 500px;
+  line-height: 2;
+  text-align: justify;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px silver;
+  transition: all 500ms ease;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 8px silver;
+}
+
+@media (max-width:500px) {
+  .card {
+    font-size: small;
+  }
+}

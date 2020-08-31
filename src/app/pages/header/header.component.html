@@ -1,40 +1,53 @@
 <mat-toolbar [ngClass]="{ shadow: !isMobile }" *ngIf="!isMobile">
-  <mat-toolbar-row class="justify-content-end">
-    <a
-      [routerLink]="['/']"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-      mat-button
-      >About</a
-    >
-    <a
-      [routerLink]="['academics']"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-      mat-button
-      >Academics</a
-    >
-    <a
-      [routerLink]="['skills']"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-      mat-button
-      >Skills</a
-    >
-    <a
-      [routerLink]="['achievements']"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-      mat-button
-      >Achievements</a
-    >
-    <a
-      [routerLink]="['projects']"
-      routerLinkActive="active"
-      [routerLinkActiveOptions]="{ exact: true }"
-      mat-button
-      >Projects</a
-    >
+  <mat-toolbar-row
+    [ngClass]="{
+      'justify-content-between': !hideLogo,
+      'justify-content-end': hideLogo
+    }"
+  >
+    <img
+      *ngIf="!hideLogo"
+      class="logo"
+      src="./../../../assets/circle.png"
+      alt=""
+    />
+    <div>
+      <a
+        [routerLink]="['/']"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        mat-button
+        >About</a
+      >
+      <a
+        [routerLink]="['academics']"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        mat-button
+        >Academics</a
+      >
+      <a
+        [routerLink]="['skills']"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        mat-button
+        >Skills</a
+      >
+      <a
+        [routerLink]="['achievements']"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        mat-button
+        >Achievements</a
+      >
+      <a
+        [routerLink]="['projects']"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        mat-button
+        >Projects</a
+      >
+    </div>
   </mat-toolbar-row>
 </mat-toolbar>
 <a
@@ -51,23 +64,49 @@
   <div class="dialog_wrapper" (click)="toggleNav()">
     <mat-card>
       <mat-card-content class="d-flex flex-column">
-        <a [routerLink]="['/']" mat-raised-button (click)="toggleNav()">
+        <a
+          [routerLink]="['/']"
+          mat-raised-button
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          (click)="toggleNav()"
+        >
           About
         </a>
-        <a [routerLink]="['academics']" mat-raised-button (click)="toggleNav()">
+        <a
+          [routerLink]="['academics']"
+          mat-raised-button
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          (click)="toggleNav()"
+        >
           Academics
         </a>
-        <a [routerLink]="['skills']" mat-raised-button (click)="toggleNav()">
+        <a
+          [routerLink]="['skills']"
+          mat-raised-button
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          (click)="toggleNav()"
+        >
           Skills
         </a>
         <a
           [routerLink]="['achievements']"
           mat-raised-button
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
           (click)="toggleNav()"
         >
           Achievements
         </a>
-        <a [routerLink]="['projects']" mat-raised-button (click)="toggleNav()">
+        <a
+          [routerLink]="['projects']"
+          mat-raised-button
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          (click)="toggleNav()"
+        >
           Projects
         </a>
       </mat-card-content>

@@ -12,3 +12,8 @@ body {
 * {
   font-family: 'Merriweather', serif;
 }
+
+.bg-black {
+  background-color: rgb(45, 45, 45);
+  color: white;
+}
