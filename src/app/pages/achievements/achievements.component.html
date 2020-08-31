@@ -24,16 +24,20 @@
 <div
   class="row justify-content-center justify-content-sm-between mt-4 pr-5 pl-5"
 >
-  <div class="col-* mr-5">
-    <button mat-raised-button class="bg-black" [routerLink]="['skills']">
-      <mat-icon>arrow_left</mat-icon>
-      <span>Prev</span>
-    </button>
-  </div>
-  <div class="col-* mr-3">
-    <a mat-raised-button class="bg-black" [routerLink]="['projects']">
-      <span>Next</span>
-      <mat-icon>arrow_right</mat-icon>
-    </a>
-  </div>
+  <button
+    mat-raised-button
+    class="col-* m-1 bg-black"
+    [routerLink]="['/', 'skills']"
+  >
+    <mat-icon>arrow_left</mat-icon>
+    <span>Prev</span>
+  </button>
+  <button
+    mat-raised-button
+    class="col-* m-1 bg-black"
+    [routerLink]="['/', 'projects']"
+  >
+    <span>Next</span>
+    <mat-icon>arrow_right</mat-icon>
+  </button>
 </div>

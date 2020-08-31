@@ -27,7 +27,6 @@ mat-toolbar-row {
 mat-toolbar-row a[mat-button] {
   margin: 5px;
   font-weight: 600;
-  width: 150px;
   text-decoration: none;
   transition: all 500ms ease;
 }

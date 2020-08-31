@@ -3,8 +3,8 @@
 </div>
 <div class="row mt-2 mb-4 border-bottom justify-content-center">
   <div class="col-* m-1 p-1 m-sm-3 p-sm-3">
-    <mat-card>
-      <img mat-card-image src="./../../../assets/images/flipr.jfif" />
+    <mat-card class="d-flex flex-column justify-content-between">
+      <img mat-card-image src="./../../../assets/images/stock.jpg" />
       <mat-card-content>
         <p>
           Participated in <b>Flipr Hackathon 5.0</b> Full Stack Web Application
@@ -32,8 +32,12 @@
     </mat-card>
   </div>
   <div class="col-* m-1 p-1 m-sm-3 p-sm-3">
-    <mat-card>
-      <img mat-card-image src="./../../../assets/images/flipr.jfif" />
+    <mat-card class="d-flex flex-column justify-content-between">
+      <img
+        class="pt-5 mt-5 mb-5 pb-3"
+        mat-card-image
+        src="./../../../assets/images/tasked.jpg"
+      />
       <mat-card-content>
         <p>
           Participated in <b>Stackhack 1.0</b> Full Stack Application
@@ -69,7 +73,7 @@
 >
   <div class="col-* m-1 p-1 m-sm-3 p-sm-3">
     <mat-card class="d-flex flex-column justify-content-between">
-      <img mat-card-image src="./../../../assets/images/flipr.jfif" />
+      <img mat-card-image src="./../../../assets/images/hirer.png" />
       <mat-card-content>
         <p>
           Online platform that connects recruiters with candidates and addresses
@@ -98,7 +102,7 @@
   </div>
   <div class="col-* m-1 p-1 m-sm-3 p-sm-3">
     <mat-card class="d-flex flex-column justify-content-between">
-      <img mat-card-image src="./../../../assets/images/flipr.jfif" />
+      <img class="mt-5" mat-card-image src="./../../../assets/images/cg.jpg" />
       <mat-card-content>
         <p>
           Due to the corona pandemic situation, theatres have to follow social
@@ -127,9 +131,9 @@
   <div class="col-* m-1 p-1 m-sm-3 p-sm-3">
     <mat-card class="d-flex flex-column justify-content-between">
       <img
-        class="bg-dark"
+        class="bg-dark recipe"
         mat-card-image
-        src="./../../../assets/images/flipr.jfif"
+        src="./../../../assets/images/recipe.jpg"
       />
       <mat-card-content>
         <p>
@@ -148,7 +152,7 @@
         <a
           mat-button
           class="bg-black"
-          href="https://hirer.herokuapp.com/"
+          href="https://github.com/Nishanth-Shanmuganathan/cg-recipe-app"
           target="_blank"
           >View Source Code</a
         >
@@ -162,7 +166,11 @@
 <div class="row mt-2 mb-4 border-bottom justify-content-center">
   <div class="col-* m-1 p-1 m-sm-3 p-sm-3">
     <mat-card class="d-flex flex-column justify-content-between">
-      <img mat-card-image src="./../../../assets/images/flipr.jfif" />
+      <img
+        class="mentor m-auto"
+        mat-card-image
+        src="./../../../assets/images/mentor-logo-dark.png"
+      />
       <mat-card-content>
         <p>
           Participated in
@@ -176,7 +184,7 @@
         <a
           mat-button
           class="bg-black"
-          href="https://stock-market-nish.herokuapp.com/"
+          href="https://mentor-hub.herokuapp.com/"
           target="_blank"
           >View Project</a
         >
@@ -184,7 +192,7 @@
         <a
           mat-button
           class="bg-black"
-          href="https://github.com/Nishanth-Shanmuganathan/stock-market"
+          href="https://github.com/Nishanth-Shanmuganathan/Mentor"
           target="_blank"
           >View Source Code</a
         >
@@ -193,7 +201,11 @@
   </div>
   <div class="col-* m-1 p-1 m-sm-3 p-sm-3">
     <mat-card class="d-flex flex-column justify-content-between">
-      <img mat-card-image src="./../../../assets/images/flipr.jfif" />
+      <img
+        class="mt-3 mb-0"
+        mat-card-image
+        src="./../../../assets/images/logo.png"
+      />
       <mat-card-content>
         <p>
           A simple website for a company borewell
@@ -205,7 +217,7 @@
         <a
           mat-button
           class="bg-black"
-          href="https://tasked-hackerearth.herokuapp.com/"
+          href="http://ss-borewells.s3-website.ap-south-1.amazonaws.com/"
           target="_blank"
           >View Project</a
         >
@@ -213,11 +225,15 @@
     </mat-card>
   </div>
 </div>
-<div class="row justify-content-center justify-content-sm-start mt-4 pr-5 pl-5">
-  <div class="col-* mr-3">
-    <a mat-raised-button class="bg-black" [routerLink]="['achievements']">
-      <mat-icon>arrow_left</mat-icon>
-      <span>Prev</span>
-    </a>
-  </div>
+<div
+  class="row justify-content-center justify-content-sm-between mt-4 pr-5 pl-5"
+>
+  <button
+    mat-raised-button
+    class="col-* m-1 bg-black"
+    [routerLink]="['/', 'achievements']"
+  >
+    <mat-icon>arrow_left</mat-icon>
+    <span>Prev</span>
+  </button>
 </div>
