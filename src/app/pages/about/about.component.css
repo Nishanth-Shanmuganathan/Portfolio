@@ -1,0 +1,15 @@
+.pic {
+  width: 50%;
+  min-width: 70px;
+  max-width: 200px;
+  padding: 0px;
+  border: 2px solid silver;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px silver;
+}
+
+.about {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
