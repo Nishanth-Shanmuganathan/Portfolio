@@ -1,0 +1,32 @@
+<mat-toolbar [ngClass]="{ shadow: !isMobile }" *ngIf="!isMobile">
+  <mat-toolbar-row class="justify-content-end">
+    <button mat-button>About</button>
+    <button mat-button>Academics</button>
+    <button mat-button>Skills</button>
+    <button mat-button>Achievements</button>
+    <button mat-button>Projects</button>
+  </mat-toolbar-row>
+</mat-toolbar>
+<button
+  *ngIf="isMobile"
+  mat-fab
+  class="bg-dark text-light"
+  [ngClass]="{ transparent: isMobile }"
+  (click)="toggleNav()"
+>
+  <mat-icon>menu</mat-icon>
+</button>
+
+<ng-container #nav *ngIf="showNavDialog">
+  <div class="dialog_wrapper" (click)="toggleNav()">
+    <mat-card>
+      <mat-card-content class="d-flex flex-column">
+        <button mat-raised-button (click)="toggleNav()">About</button>
+        <button mat-raised-button (click)="toggleNav()">Academics</button>
+        <button mat-raised-button (click)="toggleNav()">Skills</button>
+        <button mat-raised-button (click)="toggleNav()">Achievements</button>
+        <button mat-raised-button (click)="toggleNav()">Projects</button>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</ng-container>
