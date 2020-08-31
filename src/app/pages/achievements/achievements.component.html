@@ -4,8 +4,8 @@
       <img mat-card-image src="./../../../assets/images/flipr.jfif" />
       <mat-card-content>
         <p>
-          Obtained first position in <b>Flipr Hackathon 5.0</b> which was an
-          online full-stack web application development contest conducted by
+          <b>First position</b> in <b>Flipr Hackathon 5.0</b> which was an
+          online full stack web application development contest conducted by
           Flipr.ai.
         </p>
       </mat-card-content>
@@ -21,7 +21,15 @@
     </mat-card>
   </div>
 </div>
-<div class="row justify-content-center justify-content-sm-end mt-4 pr-5 pl-5">
+<div
+  class="row justify-content-center justify-content-sm-between mt-4 pr-5 pl-5"
+>
+  <div class="col-* mr-5">
+    <button mat-raised-button class="bg-black" [routerLink]="['skills']">
+      <mat-icon>arrow_left</mat-icon>
+      <span>Prev</span>
+    </button>
+  </div>
   <div class="col-* mr-3">
     <a mat-raised-button class="bg-black" [routerLink]="['projects']">
       <span>Next</span>
